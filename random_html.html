@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Number Generator</title>
+</head>
+<body>
+    <h1>Random Number:</h1>
+    <p id="randomNumberDisplay"></p>
+    <button onclick="generateRandomNumber()">Generate New Number</button>
+
+    <script>
+        function generateRandomNumber() {
+            // Generates a random integer between 1 and 100 (inclusive)
+            const randomNumber = Math.floor(Math.random() * 100) + 1;
+            document.getElementById("randomNumberDisplay").innerHTML = randomNumber;
+        }
+
+        // Generate a number on page load
+        generateRandomNumber();
+    </script>
+</body>
+</html>
